@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useNavigate } from 'react-router-dom';
 import PropTypes from "prop-types";
 
 function AddUserForm({ onAddUser, onCancel }) {
@@ -6,9 +7,13 @@ function AddUserForm({ onAddUser, onCancel }) {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
+  
+  // Mover o useNavigate para o topo do componente
+  const navigate = useNavigate();
 
   const handleAddUser = async (e) => {
     e.preventDefault();
+
     try {
       const response = await fetch("http://localhost:8080/auth/register", {
         method: "POST",
@@ -29,6 +34,7 @@ function AddUserForm({ onAddUser, onCancel }) {
 
       alert("Usuário registrado com sucesso!");
       onAddUser();
+      navigate("/people");  // Redireciona para a página "/people"
     } catch (err) {
       setError(err.message);
     }

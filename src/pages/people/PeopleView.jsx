@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import Navbar from "../../components/Navbar";
 import { useNavigate } from "react-router-dom";
+import { PencilLine, Trash } from "phosphor-react";
 
 function UsersList() {
   const [users, setUsers] = useState([]);
@@ -117,15 +118,15 @@ function UsersList() {
               <div className="mt-2 flex gap-2">
                 <button
                   onClick={() => handleEdit(user.id)}
-                  className="bg-yellow-500 text-white px-2 py-1 rounded-md shadow hover:bg-yellow-600"
+                  className="bg-black/50 text-white px-1 py-1 rounded-md shadow-black shadow-inner hover:bg-blue-600/50 active:scale-95"
                 >
-                  Editar
+                  <PencilLine color="#1E88E5"/>
                 </button>
                 <button
                   onClick={() => handleDelete(user.id)}
-                  className="bg-red-500 text-white px-2 py-1 rounded-md shadow hover:bg-red-600"
+                  className="bg-black/50 text-white px-1 py-1 rounded-md shadow-black shadow-inner hover:bg-red-600/50 active:scale-95"
                 >
-                  Excluir
+                  <Trash color="#ff0000" />
                 </button>
               </div>
             )}

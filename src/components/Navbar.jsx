@@ -24,7 +24,7 @@ const Navbar = () => {
             <Link 
               key={nav.name}
               to={nav.path}
-              className="px-5 text-xs cursor-pointer text-gray hover:text-white transition-all"
+              className="px-5 text-xs cursor-pointer text-white/70 hover:text-white transition-all"
             >
               {nav.name}
             </Link>
