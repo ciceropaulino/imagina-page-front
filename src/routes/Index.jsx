@@ -5,6 +5,7 @@ import Login from "../pages/login/Login";
 import PeopleView from "../pages/people/PeopleView";
 import Contact from "../pages/contact/Contact";
 import NotFound from "../pages/not_found/NotFound";
+import FormAddUser from "../pages/forms/FormAddUser.jsx"
 
 
 const PageRoutes = () => {
@@ -16,6 +17,7 @@ const PageRoutes = () => {
         <Route path="/people" element={<PeopleView />} />
         <Route path="/contact" element={<NotFound />} />
         <Route path="/*" element={<NotFound />} />
+        <Route path="/add_user" element={<FormAddUser />} />
       </Routes>
     </Router>
   );
