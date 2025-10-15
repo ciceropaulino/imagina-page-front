@@ -1,57 +1,35 @@
-```
-my-app/
-├── public/                # Arquivos estáticos públicos
-├── src/
-│   ├── api/               # Chamadas de API e funções relacionadas a dados
-│   │   ├── api.js
-│   │   └── ...
-│   ├── components/        # Componentes reutilizáveis
-│   │   ├── Button/
-│   │   │   ├── Button.jsx
-│   │   │   ├── Button.css
-│   │   │   └── Button.test.jsx
-│   │   └── ...
-│   ├── features/          # Funcionalidades agrupadas
-│   │   ├── Auth/
-│   │   │   ├── LoginForm.jsx
-│   │   │   ├── RegisterForm.jsx
-│   │   │   └── authSlice.js
-│   │   └── ...
-│   ├── hooks/             # Hooks customizados
-│   │   ├── useAuth.js
-│   │   └── useFetch.js
-│   ├── layouts/           # Estruturas de layout principais
-│   │   ├── MainLayout.jsx
-│   │   └── AdminLayout.jsx
-│   ├── pages/             # Páginas organizadas por rotas
-│   │   ├── Home/
-│   │   │   ├── Home.jsx
-│   │   │   └── Home.css
-│   │   ├── About/
-│   │   │   ├── About.jsx
-│   │   │   └── About.css
-│   │   └── ...
-│   ├── routes/            # Configuração de rotas
-│   │   ├── index.jsx
-│   │   └── privateRoutes.jsx
-│   ├── store/             # Gerenciamento de estado (Redux, Zustand, etc.)
-│   │   ├── index.js
-│   │   └── slices/
-│   │       ├── authSlice.js
-│   │       └── ...
-│   ├── styles/            # Estilos globais e temas
-│   │   ├── variables.css
-│   │   ├── global.css
-│   │   └── ...
-│   ├── utils/             # Funções utilitárias (formatadores, validações, etc.)
-│   │   ├── formatDate.js
-│   │   ├── validateInput.js
-│   │   └── ...
-│   ├── App.jsx            # Componente principal
-│   ├── main.jsx           # Ponto de entrada principal
-│   └── index.css          # Estilos globais
-├── .env                   # Variáveis de ambiente
-├── package.json           # Dependências e scripts
-├── vite.config.js         # Configuração do Vite
-└── README.md              # Documentação
-```
+<div aligh=center style="padding-bottom: 80px;">
+<img align="right" alt="gif" height="60" src="repo-assets/IMD_logo_01-01.svg">
+
+<img align="left" alt="gif" height="60" src="repo-assets/ufrn-logo.png">
+
+</div>
+
+</br>
+
+<div align=center>
+
+## Projeto de página web para laboratório IMAGINA - Desenvolvimento de Sistemas Web I
+
+</div>
+
+# IMAGINA Lab Front-End
+
+> This project was developed for the web 1 subject of IT Graduation on UFRN. This component has focus
+on web front-end development.
+
+### About:
+This project is built as a Modern Single-Page Application (SPA) using React and Vite build tool. 
+The architecture is designed for scalability, featuring clear separation of concerns: Axios handles
+API communication, while React Router DOM manages client-side navigation. For styles, the approach is
+combining the utility-first speed of Tailwind CSS with the professional, pre-built components of
+MUI (Material UI). By organizing code into logical domains (such as features/ for authentication
+and store/ for global state management), the project maintains high predictability and is well-structured
+for future expansion with collaboration of IMAGINA Research Lab members.
+
+### How run:
+#### Clone the repo:
+```git clone https://github.com/ciceropaulino/imagina-page-front.git```
+#### Run:
+```npm install && npm run dev```
+
